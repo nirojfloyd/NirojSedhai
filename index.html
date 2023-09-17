@@ -6,6 +6,35 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Add responsive CSS here */
+			@media screen and (max-width: 768px) {
+				.column {
+					flex-direction: column;
+				}
+
+				.column .col-4 {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+
+				.img-hover-zoom--quick-zoom .item {
+					text-align: center;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.column .col-4 {
+					width: 100%;
+				}
+
+				.column .col-4 img {
+					width: 100%;
+				}
+			}
+		</style>
+	
+	
 	</head>
 	<body class="is-preload">
 
@@ -18,7 +47,7 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="images/ME.jpg" alt="" /></span>
 							<h1 id="title">Niroj Sedhai</h1>
-							<p>Computer Engineering Student</p>
+							<p>Computer Engineer</p>
 						</div>
 
 					<!-- Nav -->
@@ -57,12 +86,12 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! It's <strong>NIROJ</strong>, </h2>
+								<h2 class="alt">Hey there! It's <strong>NIROJ,</strong> </h2>I'm delighted to welcome you to my portfolio.
+
 								
 							</header>
 
-							   <p align="justify">a Computer Engineering student passionate about programming and engineering.
-								I'm primarily interested in Data Science, Machine Learning and Game Development as well.</p>
+							   
 							
 
 							<footer>
@@ -84,10 +113,9 @@
 							<div class="zoomin">
 								<a href="javascript:void(0)"><img src="images/MA.jpg" width="200"height="250" alt="This zooms-in really well and smooth"/></a>
 							  </div>
-							<p align="justify">I'm currently doing my Bachelor's degree in Computer Engineering at
-								Pokhara University, School of Engineering. I'm an aspiring Data Engineer who has a firm belief that the power of
-								data and analytics can revolutionalize the world.
-								I'm interested in obtaining an entry-level position in the data analytics.
+							<p align="justify">I'm a Computer Engineer who's enthusiastic about technology and coding.
+								 My main interests revolve around Web Development, Data Science, Machine Learning, and Artificial Intelligence (AI).
+								 These fields fascinate me, and I'm constantly exploring and learning to expand my knowledge and skills.
 							</p>
 
 						</div>
@@ -99,56 +127,96 @@
 						<div class="container">
 
 							<header>
-								<h2>MY PROJECTS</h2>
+								<h2 class="project-heading">MY PROJECTS</h2>
 							</header>
 
-							<div class="column">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/nirojfloyd/School-Management-System" class="box"><img src="images/sms.jpg" width="600"height="250" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/nirojfloyd/School-Management-System">SCHOOL MANAGEMENT SYSTEM 
+							<div class="project-grid">
+
+								<!-- Project 0 -->
+								<div class="project-card">
+									<a href="https://github.com/nirojfloyd/OCTS-Frontend" class="box"><img src="images/OCTS.png" alt="" /></a>
+									<div class="project-info">
+										<h3 class="project-title"><a href="https://github.com/nirojfloyd/OCTS-Frontend">ONLINE COLLEGE TRANSFER SYSTEM</a></h3>
+										<p class="project-description">This project is an Online College Transfer System developed for Pokhara University.
+											The main purpose of this system is to faciliate students and other relevant stakeholders to streamline the transfer of students within colleges of Pokhara University.
+										</p>
+										<div class="button-container">
+											<a href="https://github.com/nirojfloyd/OCTS-Frontend" class="button scrolly">View Code</a>
+											<a href="https://octs-finalproject.web.app/" class="button scrolly">View Demo</a>
+									</div>
+								</div>
+								</div>
+
+								<!-- Project 2 -->
+								<div class="project-card">
+									<a href="https://youtu.be/tKNjctOYIhI" class="box"><img src="images/billiarddd.webp" alt="" /></a>
+									<div class="project-info">
+									<h3 class="project-title"><a href="https://youtu.be/tKNjctOYIhI">3D BILLIARD GAME</a></h3>
+										<p class="project-description">An academic project developed with collaboration of scrum team of 15 using C# and Unity. I personally contributed in Simulation
+										of 3D Billiard Game, legacy documentation of Simulator, Tracking Components and some UI functionalities.</p>
+										<a href="https://youtu.be/tKNjctOYIhI" class="button scrolly">View Demo</a>
+								</div>
+							</div>
+
+								<!-- Project 0.1 -->
+								<div class="project-card">
+									<a href="https://github.com/nirojfloyd/Multitouch_Construction-OpenCV" class="box"><img src="images/OPENCV.png" alt="" /></a>
+									<div class="project-info">
+										<h3 class="project-title"><a href="https://github.com/nirojfloyd/Multitouch_Construction-OpenCV">VIDEO PROCESSING / BLOB TRACKING IN OPENCV</a></h3>
+										<p class="project-description">
+											• Utilized C++ within the OPENCV framework to detect and track video stream blobs.
+
+											• Successfully integrated the TUIO Framework into the project for enhanced functionality</p>
+											<a href="https://github.com/nirojfloyd/Multitouch_Construction-OpenCV" class="button scrolly">View Code</a>
+									</div>
+								</div>
+
+								<!-- Project 1 -->
+								<div class="project-card">
+									<a href="https://github.com/nirojfloyd/School-Management-System" class="box">
+										<img src="images/sms.jpg" alt="" />
+									</a>
+								
+									<div class="project-info">
+										<h3 class="project-title"><a href="https://github.com/nirojfloyd/School-Management-System">SCHOOL MANAGEMENT SYSTEM
 											</a></h3>
-											<p align="justify">
+										<p class="project-description">
 											A simple Windows Desktop Application developed in C# using ASP.NET Framework.
 											The backend of this project is written using SQL queries in SQL SERVER (database).
-										    </p>
-											<a href="https://github.com/nirojfloyd/School-Management-System" class="button scrolly">View Code</a>
-										</header>
-									</article>
+										</p>
+										<a href="https://github.com/nirojfloyd/School-Management-System" class="button scrolly">View Code</a>
+									</div>
+								</div>
 								
-								</div>
-								<p>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://youtu.be/tKNjctOYIhI" class="box"><img src="images/billiarddd.webp" width="600"height="300"  alt="" /></a>
-										<header>
-											<h3><a href="https://youtu.be/tKNjctOYIhI">3D BILLIARD GAME</a></h3>
-											<p align="justify">An academic project developed with collaboration of scrum team of 15 using C# and Unity. I personally contributed in Simulation
-											of 3D Billiard Game, legacy documentation of Simulator, Tracking Components and some UI functionalities.</p>
-											<a href="https://youtu.be/tKNjctOYIhI" class="button scrolly">View Demo</a>
-										</header>
-										
-									</article>
+								
 
-								</p>	
-                                <p>
+								<!-- Project 2.1-->
+								<div class="project-card">
+									<a href="https://github.com/nirojfloyd/NewsApp" class="box"><img src="images/NEWSAPP.jpg" alt="" /></a>
+									<div class="project-info">
+										<h3 class="project-title"><a href="https://github.com/nirojfloyd/NewsApp">NEWS APP</a></h3>
+										<p class="project-description">News App is an Android mobile application that provides users with access to the latest news from around the world.
+											 This app utilizes News API to allow users to browse news articles according to different categories, including business, health, entertainment, sports, and more. 
+										</p>
+											 <div class="button-container">
+												<a href="https://github.com/nirojfloyd/NewsApp" class="button scrolly">View Code</a>
+												<a href="https://www.youtube.com/watch?v=AKBgkV8pKa8&ab_channel=Nirojsedhai" class="button scrolly">View Demo</a>
+										</div>
+									</div>
+							</div>
+
+							<!-- Project 2.2 -->
+							<div class="project-card">
+								<a href="https://github.com/nirojfloyd/Django-Student_Study_System" class="box"><img src="images/SSS.png" alt="" /></a>
+								<div class="project-info">
+									<h3 class="project-title"><a href="https://github.com/nirojfloyd/Django-Student_Study_System">STUDENT STUDY SYSTEM</a></h3>
+									<p class="project-description">Student Study System is a web app where students can login to gain access to learning related materials.
+										 The main goal of this project is to develop an efficient dashboard which thinks students as the main target users and provides useful services at a single place and through a single interface to improve learning practices.</p>
+										<a href="https://github.com/nirojfloyd/Django-Student_Study_System" class="button scrolly">View Code</a>
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/nirojfloyd/tic-tac-toe-game.-" class="box"><img src="images/android-ios-tic-tac-toe.png" width="600"height="250" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/nirojfloyd/tic-tac-toe-game.-">TIC-TAC-TOE GAME</a></h3>
-											<p align="justify">This is a simple text-based Tic-Tac-Toe game created in Python.
-												It facilitates two users to play at a time. The first player can choose between X or 0 to begin the game. 
-												The second player is bound to choose the other one which is left by player 1.</p>
-												<a href="https://github.com/nirojfloyd/tic-tac-toe-game.-" class="button scrolly">View Code</a>
-										</header>
-										
-									</article>
-									
-								</div>
-							    </p>
+						    </div>
+
+								
 							</div>
 
 						</div>
@@ -164,72 +232,56 @@
 						</header>
 						
 
-					<div class="row">
-						<div class="img-hover-zoom--quick-zoom">
-						    <article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/Python.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">Python</p>
-							</article>
+					<div class="skills-grid">
+						<div class="skill-item">
+								<img src="images/Python.png" alt="Python" />
+								<p>Python</p>
 						</div>
 						
-						<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/C.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">C</p>
-							</article></div>
-                            
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/C++.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">C++</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/Csharp_Logo.png" width="100"height="80" alt="" /></a>
-								<p style="color:white">C#</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-								<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/gitgit.jpg" width="80"height="80" alt="" /></a>
-								<p style="color:white">Git</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/scrum.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">Scrum</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/html.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">HTML</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/css.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">CSS</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/sql.jpg" width="80"height="80" alt="" /></a>
-								<p style="color:white">SQL</p>
-							</article></div>
-
-							<div class="img-hover-zoom--quick-zoom">
-							<article class="item">
-								<a href="javascript:void(0)" class="image fit"><img src="images/spss.png" width="80"height="80" alt="" /></a>
-								<p style="color:white">SPSS</p>
-							</article></div>		
+						<div class="skill-item">
+							<img src="images/C.png" alt="C" />
+							<p>C</p>
 						</div>
-
-
+						<div class="skill-item">
+							<img src="images/C++.png" alt="C++" />
+							<p>C++</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/Csharp_Logo.png" alt="C#" />
+							<p>C#</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/gitgit.jpg" alt="Git" />
+							<p>Git</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/scrum.png" alt="Scrum" />
+							<p>Scrum</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/html.png" alt="HTML" />
+							<p>HTML</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/css.png" alt="CSS" />
+							<p>CSS</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/sql.jpg" alt="SQL" />
+							<p>SQL</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/React.png" alt="React" />
+							<p>React</p>
+						</div>
+						<div class="skill-item">
+							<img src="images/Firebase.png" alt="Firebase" />
+							<p>Firebase</p>
+						</div>
 					</div>
-				</section>	
+				</div>
+			</section>
+				
 
 				<!-- Contact -->
 					<section id="contact" class="four">
